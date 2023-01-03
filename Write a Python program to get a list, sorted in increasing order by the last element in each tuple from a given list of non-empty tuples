@@ -1,0 +1,18 @@
+# define a function to sort the list of tuples
+def sort_tuple_list(tuple_list):
+  # sort the list of tuples by the last element in each tuple
+  sorted_list = sorted(tuple_list, key=lambda x: x[1])
+  
+  # return the sorted list
+  return sorted_list
+
+# test the function with the sample list
+tuple_list = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+sorted_list = sort_tuple_list(tuple_list)
+
+# print the sorted list
+print(sorted_list)
+
+
+The output of this program will be
+[(2, 1), (1, 2), (2, 3), (4, 4), (2, 5)]
